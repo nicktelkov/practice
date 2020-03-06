@@ -9,7 +9,7 @@ public class Employee {
     private int age;
     private static int id;
 
-    public Employee(String name, String middleName, String lastName, String position, String email, int cell, int salary, int age) {
+    public Employee(String name, String middleName, String lastName, String position, String email, int cell, double salary, int age) {
         this.name = name;
         this.middleName = middleName;
         this.lastName = lastName;
@@ -27,7 +27,7 @@ public class Employee {
         System.out.println("Email " + email);
         System.out.println("Мобильный " + cell);
         System.out.println("Зарплата " + salary);
-        System.out.println("Возраст " + salary);
+        System.out.println("Возраст " + age);
     }
 
     public String getName() {
