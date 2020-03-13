@@ -9,4 +9,17 @@ public class Cat {
     public void eat(Plate p) {
         full = p.decreaseFood(appetite);
     }
+    public boolean getFull(){
+        return full;
+    }
+    public String getName(){
+        return name;
+    }
+    public void fill() {
+        if (full) {
+            System.out.println(name + " - сытый");
+        } else {
+            System.out.println(name + " - голодный");
+        }
+    }
 }
